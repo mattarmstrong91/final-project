@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAC Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Blood Alcohol Content (BAC) Calculator</h2>
+        <form id="bacForm">
+            <div class="genderContainer">
+                <div class="radiobox">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div class="radiobox">
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+        
+            <div class="inputBox">
+                <label for="weight"><b>Body Weight in Pounds</b></label>
+                <input type="number" id="weight" placeholder="Enter weight" min="0" required>
+            </div>
+            <br>
+
+            <span><b>Drinks Consumed</b></span>
+            
+            <div class="drinkBox">
+                <div class="labelbox"><label for="beer">Beer (12 oz.) 5% ABV</label></div>
+                <input type="number" id="beer" placeholder="0" min="0">
+            </div>
+
+            <div class="drinkBox">
+                <div class="labelbox"><label for="wine">Wine (50 oz.) 12% ABV</label></div>
+                <input type="number" id="wine" placeholder="0" min="0">
+            </div>
+
+            <div class="drinkBox">
+                <div class="labelbox"><label for="liq">Liquor (1.5 oz.) 40% ABV</label></div>
+                <input type="number" id="liq" placeholder="0" min="0">
+            </div>
+
+            <span><b>Time Since First Drink</b></span>
+
+            <div class="drinkBox timebox">
+                <input type="number" id="hours" placeholder="0" min="0">
+                <div class="labelbox"><label for="hours">Hours</label></div>
+            </div>
+
+            <div class="results">
+                <h4 class="resultInfo">Your BAC is Approximately: <span class="bacVal"></span></h4>
+                <h5 class="otherInfo"></h5>
+            </div>
+            <input type="submit" value="Calculate">
+          </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

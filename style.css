@@ -1,0 +1,71 @@
+.container{
+    margin: auto;
+    border: 1px solid grey;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], select, input[type=number] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 15px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 150px;
+    background-color: #378eff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #57a5ff;
+  }
+
+  .genderContainer{
+      margin-bottom: 20px;
+  }
+
+  .radiobox{
+      margin-right: 30px;
+      display: inline;
+  }
+  
+  .inputBox{
+      margin-bottom: 10px;
+  }
+
+  .drinkBox{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .drinkBox .labelbox{
+      display: inline-block;
+      width: 200px;
+  }
+
+  .drinkBox input{
+      display: inline;
+      width: 100px;
+      text-align: center;
+  }
+
+
+  .timebox .labelbox{
+    margin-left: 20px;
+  }
+
+  .resultInfo{
+      display: none;
+  }
